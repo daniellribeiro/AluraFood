@@ -31,15 +31,12 @@ public class Pagamento {
     @Size(max = 100)
     private String nome;
 
-    @NotBlank
     @Size(max = 19)
     private String numero;
 
-    @NotBlank
     @Size(max = 7)
     private String expiracao;
 
-    @NotBlank
     @Size(min = 3, max = 3)
     private String codigo;
 
@@ -52,4 +49,20 @@ public class Pagamento {
 
     @NotNull
     private Long formaDePagamentoId;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public @NotNull Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(@NotNull Status status) {
+        this.status = status;
+    }
 }

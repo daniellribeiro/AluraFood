@@ -17,4 +17,12 @@ public class PagamentoDTO {
     private Status status;
     private Long formaDePagamentoId;
     private Long pedidoId;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }
